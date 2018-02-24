@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>379477060342-tvp03chprptk85n8td0d9c638nnv5p39.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.379477060342-tvp03chprptk85n8td0d9c638nnv5p39</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAwMLg-ZlE8KxifJQWglj0cl-oi1yA5_Yw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>379477060342</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nyc.c4Q.AC4.3.TinyApp-GetEmCold-</string>
+	<key>PROJECT_ID</key>
+	<string>getemcold</string>
+	<key>STORAGE_BUCKET</key>
+	<string>getemcold.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:379477060342:ios:183c1a79909cc3c1</string>
+	<key>DATABASE_URL</key>
+	<string>https://getemcold.firebaseio.com</string>
+</dict>
+</plist>

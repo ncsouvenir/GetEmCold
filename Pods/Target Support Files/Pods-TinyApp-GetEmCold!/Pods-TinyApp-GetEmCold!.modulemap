@@ -1,0 +1,6 @@
+framework module Pods_TinyApp_GetEmCold_ {
+  umbrella header "Pods-TinyApp-GetEmCold!-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_TinyApp_GetEmCold_UITests {
+  umbrella header "Pods-TinyApp-GetEmCold!UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
