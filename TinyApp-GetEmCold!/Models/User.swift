@@ -1,5 +1,5 @@
 //
-//  Beer.swift
+//  User.swift
 //  TinyApp-GetEmCold!
 //
 //  Created by C4Q on 2/23/18.
@@ -8,21 +8,12 @@
 
 import Foundation
 
-
-struct Beer: Codable {
-    //let beerUID: String
-    let id: Int
-    let name: String
-    let tagline: String
-    let first_brewed: String
-    let description: String
-    let abv: Double
-    var image_url: String
-    func beerToJSON() -> Any? {
+struct UserProfile: Codable {
+    let userUID: String?
+    let userName: String
+    //trying to encode the struct into jsonData
+    func userToJSON() -> Any? {
         let jsonData = try! JSONEncoder().encode(self)
         return try! JSONSerialization.jsonObject(with: jsonData, options: [])
     }
 }
-
-
-

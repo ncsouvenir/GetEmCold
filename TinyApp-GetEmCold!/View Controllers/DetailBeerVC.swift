@@ -9,27 +9,39 @@
 import UIKit
 
 class DetailBeerVC: UIViewController {
-
+    
+    @IBOutlet weak var beerName: UILabel!
+    @IBOutlet weak var beerABV: UILabel!
+    @IBOutlet weak var beerDescription: UITextView!
+    @IBOutlet weak var beerImg: UIImageView!
+    
+    //inject beer object from Beer VC
+    
+    var thisBeer: Beer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        view.backgroundColor = .red
+        setUpDetailView()
+        setUpImage()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setUpDetailView(){
+        beerName.text = thisBeer.name
+        beerABV.text = String(thisBeer.abv)
+        beerDescription.text = thisBeer.description
+        beerImg.image = #imageLiteral(resourceName: "bookImg")
     }
-    */
-
+    
+    func setUpImage(){
+        let imageEndpoint = thisBeer.image_url
+        //set completion for image
+        let getImageFromOnline: (UIImage)-> Void = {(onlineImage: UIImage) in
+            self.beerImg.image = onlineImage
+        }
+        //call ImageAPIClient
+        ImageHelper.manager.getImage(from: imageEndpoint,
+                                     completionHandler: getImageFromOnline,
+                                     errorHandler: {print($0)})
+    }
 }

@@ -19,7 +19,6 @@
 		812F25452040EBF80026FB96 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F25442040EBF80026FB96 /* APIKeys.swift */; };
 		812F25472040EC060026FB96 /* AuthUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F25462040EC060026FB96 /* AuthUserService.swift */; };
 		812F254C2040EC630026FB96 /* FBStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F254B2040EC630026FB96 /* FBStorageManager.swift */; };
-		812F254E2040EC890026FB96 /* FBUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F254D2040EC890026FB96 /* FBUserManager.swift */; };
 		812F25502040EC920026FB96 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F254F2040EC920026FB96 /* Beer.swift */; };
 		812F25522040ECA90026FB96 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F25512040ECA90026FB96 /* LoginView.swift */; };
 		812F25542040ECB30026FB96 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F25532040ECB30026FB96 /* CreateAccountView.swift */; };
@@ -34,6 +33,13 @@
 		812F25692040EEA30026FB96 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F25682040EEA30026FB96 /* AppError.swift */; };
 		812F256B2040EF000026FB96 /* FBFavoritesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F256A2040EF000026FB96 /* FBFavoritesManager.swift */; };
 		812F256D2040F03F0026FB96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 812F256C2040F03F0026FB96 /* GoogleService-Info.plist */; };
+		812F256F2040F3C40026FB96 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F256E2040F3C40026FB96 /* User.swift */; };
+		812F25712041BDAF0026FB96 /* FBBeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F25702041BDAF0026FB96 /* FBBeerManager.swift */; };
+		812F25762041D92B0026FB96 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F25752041D92B0026FB96 /* TabBarController.swift */; };
+		812F25782041DAE60026FB96 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812F25772041DAE60026FB96 /* Login.storyboard */; };
+		812F257A2041DAF10026FB96 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812F25792041DAF10026FB96 /* TabBar.storyboard */; };
+		81E7C0B92041F0CB00E1CF5A /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81E7C0B82041F0CB00E1CF5A /* CreateAccount.storyboard */; };
+		81E7C0BB2041FD5300E1CF5A /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E7C0BA2041FD5300E1CF5A /* BeerTableViewCell.swift */; };
 		9818D351E1927B36789166BD /* Pods_TinyApp_GetEmCold_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5A3CB22D7A9E2303E93D56A /* Pods_TinyApp_GetEmCold_.framework */; };
 		B13F0A3416414046197B5411 /* Pods_TinyApp_GetEmCold_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1A52EB8CDEFC1977C83A72 /* Pods_TinyApp_GetEmCold_UITests.framework */; };
 /* End PBXBuildFile section */
@@ -77,7 +83,6 @@
 		812F25442040EBF80026FB96 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		812F25462040EC060026FB96 /* AuthUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUserService.swift; sourceTree = "<group>"; };
 		812F254B2040EC630026FB96 /* FBStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBStorageManager.swift; sourceTree = "<group>"; };
-		812F254D2040EC890026FB96 /* FBUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBUserManager.swift; sourceTree = "<group>"; };
 		812F254F2040EC920026FB96 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		812F25512040ECA90026FB96 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		812F25532040ECB30026FB96 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
@@ -92,7 +97,14 @@
 		812F25682040EEA30026FB96 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		812F256A2040EF000026FB96 /* FBFavoritesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBFavoritesManager.swift; sourceTree = "<group>"; };
 		812F256C2040F03F0026FB96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		812F256E2040F3C40026FB96 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		812F25702041BDAF0026FB96 /* FBBeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBBeerManager.swift; sourceTree = "<group>"; };
+		812F25752041D92B0026FB96 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		812F25772041DAE60026FB96 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		812F25792041DAF10026FB96 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		816A6B71DAD8BCFFE1C5558F /* Pods_TinyApp_GetEmCold_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyApp_GetEmCold_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81E7C0B82041F0CB00E1CF5A /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
+		81E7C0BA2041FD5300E1CF5A /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		8D1A52EB8CDEFC1977C83A72 /* Pods_TinyApp_GetEmCold_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyApp_GetEmCold_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A3CB22D7A9E2303E93D56A /* Pods_TinyApp_GetEmCold_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyApp_GetEmCold_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D1D828BF8EB8FEBF3811CA /* Pods-TinyApp-GetEmCold!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyApp-GetEmCold!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinyApp-GetEmCold!/Pods-TinyApp-GetEmCold!.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +177,7 @@
 		812F25092040EA0D0026FB96 /* TinyApp-GetEmCold! */ = {
 			isa = PBXGroup;
 			children = (
+				812F25722041D7A00026FB96 /* StoryBoards */,
 				812F253A2040EB8B0026FB96 /* Network Helpers */,
 				812F25392040EB850026FB96 /* Services */,
 				812F254A2040EC330026FB96 /* Models */,
@@ -248,6 +261,7 @@
 				812F25612040ED450026FB96 /* BeerVC.swift */,
 				812F25632040ED650026FB96 /* DetailBeerVC.swift */,
 				812F25652040ED750026FB96 /* FavoritesVC.swift */,
+				812F25752041D92B0026FB96 /* TabBarController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -255,7 +269,7 @@
 		812F25482040EC0C0026FB96 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				812F254D2040EC890026FB96 /* FBUserManager.swift */,
+				812F25702041BDAF0026FB96 /* FBBeerManager.swift */,
 				812F256A2040EF000026FB96 /* FBFavoritesManager.swift */,
 			);
 			path = Database;
@@ -273,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				812F254F2040EC920026FB96 /* Beer.swift */,
+				812F256E2040F3C40026FB96 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,8 +295,19 @@
 		812F25672040EDFB0026FB96 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
+				81E7C0BA2041FD5300E1CF5A /* BeerTableViewCell.swift */,
 			);
 			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		812F25722041D7A00026FB96 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				812F25772041DAE60026FB96 /* Login.storyboard */,
+				81E7C0B82041F0CB00E1CF5A /* CreateAccount.storyboard */,
+				812F25792041DAF10026FB96 /* TabBar.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		8E2776C870E6CFF21A6429F6 /* Frameworks */ = {
@@ -410,6 +436,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812F257A2041DAF10026FB96 /* TabBar.storyboard in Resources */,
+				812F25782041DAE60026FB96 /* Login.storyboard in Resources */,
+				81E7C0B92041F0CB00E1CF5A /* CreateAccount.storyboard in Resources */,
 				812F25152040EA0D0026FB96 /* LaunchScreen.storyboard in Resources */,
 				812F25122040EA0D0026FB96 /* Assets.xcassets in Resources */,
 				812F256D2040F03F0026FB96 /* GoogleService-Info.plist in Resources */,
@@ -597,19 +626,22 @@
 			files = (
 				812F25662040ED750026FB96 /* FavoritesVC.swift in Sources */,
 				812F25542040ECB30026FB96 /* CreateAccountView.swift in Sources */,
-				812F254E2040EC890026FB96 /* FBUserManager.swift in Sources */,
 				812F25562040ECCA0026FB96 /* BeerView.swift in Sources */,
 				812F25642040ED650026FB96 /* DetailBeerVC.swift in Sources */,
 				812F25502040EC920026FB96 /* Beer.swift in Sources */,
 				812F255A2040ECE00026FB96 /* FavoritesView.swift in Sources */,
 				812F25472040EC060026FB96 /* AuthUserService.swift in Sources */,
 				812F253F2040EBD90026FB96 /* NetworkHelper.swift in Sources */,
+				812F25762041D92B0026FB96 /* TabBarController.swift in Sources */,
 				812F254C2040EC630026FB96 /* FBStorageManager.swift in Sources */,
+				812F256F2040F3C40026FB96 /* User.swift in Sources */,
 				812F25582040ECD40026FB96 /* DetailView.swift in Sources */,
 				812F25452040EBF80026FB96 /* APIKeys.swift in Sources */,
+				81E7C0BB2041FD5300E1CF5A /* BeerTableViewCell.swift in Sources */,
 				812F25692040EEA30026FB96 /* AppError.swift in Sources */,
 				812F25622040ED450026FB96 /* BeerVC.swift in Sources */,
 				812F256B2040EF000026FB96 /* FBFavoritesManager.swift in Sources */,
+				812F25712041BDAF0026FB96 /* FBBeerManager.swift in Sources */,
 				812F255E2040ED160026FB96 /* CreateAccountVC.swift in Sources */,
 				812F25432040EBF00026FB96 /* BeerAPIClient.swift in Sources */,
 				812F250B2040EA0D0026FB96 /* AppDelegate.swift in Sources */,
