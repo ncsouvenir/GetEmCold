@@ -86,17 +86,17 @@ class AuthUserManager {
                 self.delegate?.didCreateUser(self, user: user)
                 print("\(user.uid) added to firebase with email: \(email)")
                 //add user to Firebase
-                self.addUserToFirebaseDatabase(userUID: user.uid, userName: userName, categories: nil)
+                self.addUserToFirebaseDatabase(userUID: user.uid, userName: userName)
             }
         }
     }
     
     
-    private func addUserToFirebaseDatabase(userUID: String, userName: String, categories: [String]?){
-        let userNameDatabaseReference = usersRef.child(userUID)
-        let childKey = userNameDatabaseReference.key
+    private func addUserToFirebaseDatabase(userUID: String, userName: String){
+        let userNameDatabaseReference = usersRef.child(userUID).child(userName)
+        //let childKey = userNameDatabaseReference.key
         let user: UserProfile
-        user = UserProfile(userUID: childKey, userName: userName)
+        user = UserProfile(userUID: userUID, userName: userName)
         userNameDatabaseReference.setValue(user.userToJSON()) { (error, _) in
             if let error = error {
                 print("User not added with error: \(error)")

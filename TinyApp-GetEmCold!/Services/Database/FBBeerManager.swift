@@ -53,7 +53,7 @@ class FirebaseBeerManager {
     weak var delegate: FirebaseBeerManagerDelegate?
     
     //Add beer to firebase..
-    public func addBeerToFirebase(beerUID: String, id: Int, name: String, tagline: String, first_brewed: String, description: String, image_url: String, abv: Double){
+    public func addBeerToFirebase(id: Int, name: String, tagline: String, first_brewed: String, description: String, image_url: String, abv: Double){
         //creating a unique key identifier
         let childByAutoID = Database.database().reference(withPath: "beer").child(name) //the autoID will the beers name
         //let childKey = childByAutoID.key

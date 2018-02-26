@@ -11,6 +11,7 @@ import Foundation
 struct UserProfile: Codable {
     let userUID: String?
     let userName: String
+    //let beers: [Beer]
     //trying to encode the struct into jsonData
     func userToJSON() -> Any? {
         let jsonData = try! JSONEncoder().encode(self)

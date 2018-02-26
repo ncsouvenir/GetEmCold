@@ -14,6 +14,8 @@ class BeerVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var user: UserProfile!
     
+    var beer: Beer?
+    
     var beers = [Beer](){
         didSet{
             self.tableView.reloadData()
@@ -26,6 +28,8 @@ class BeerVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         loadBeers()
+        //if beers are not already in Firebase, call loadBeers()
+        //if beers are in firebase, call getBeers()
     }
     
     
@@ -36,7 +40,16 @@ class BeerVC: UIViewController {
             
             //Add beers to firebase: THIS WORKS if manually added
             //HOW TO ADD THE BEER OBJECTS AS THEY COME FROM THE HTTP CALL?
-            FirebaseBeerManager.manager.addBeerToFirebase(beerUID: "1", id: 2, name: "beerrrr", tagline: "cold going down", first_brewed: "1987", description: "yum", image_url: "", abv: 10)
+            FirebaseBeerManager.manager.addBeerToFirebase(id: 0, name: "narwhal", tagline: "It's strong", first_brewed: "10-2012", description: "yummy but will sneak up on you", image_url: "", abv: 10.5)
+            for beer in self.beers{
+            FirebaseBeerManager.manager.addBeerToFirebase(id: beer.id ,
+                                                          name: beer.name,
+                                                          tagline: beer.tagline,
+                                                          first_brewed: beer.first_brewed,
+                                                          description: beer.description,
+                                                          image_url: beer.image_url,
+                                                          abv: beer.abv)
+            }
         }
         BeerAPIClient.manager.getBeersNoURLString(loadBeersFromOnline,
                                                   errorHandler: {print($0)})
